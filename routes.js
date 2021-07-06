@@ -3,5 +3,5 @@ const controller = require('./controller')
 
 module.exports = (app) => {
   app.get('/', controller.homepage)
-  app.get('/find-all', controller.findAll)
+  app.get('/rainfall-outlook-all', controller.rainfallOutlookAll)
 }

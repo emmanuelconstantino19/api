@@ -1,12 +1,12 @@
 const mongoose = require('mongoose')
-const WeatherOutlook = mongoose.model('WeatherOutlook')
+const RainfallOutlook = mongoose.model('RainfallOutlook')
 
 exports.homepage = (req, res) => {
   res.end()
 }
 
-exports.findAll = (req, res) => {
-  WeatherOutlook.find({ }, (err, results) => {
+exports.rainfallOutlookAll = (req, res) => {
+  RainfallOutlook.find({ }, (err, results) => {
     res.send(results)
   })
 }
